@@ -54,31 +54,32 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('https://images.pexels.com/photos/248174/pexels-photo-248174.jpeg?auto=compress&cs=tinysrgb&h=350') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
 }
 header {
-  line-height: 1.5;
+  line-height: 1.4;
 }
 
 .tag {
-  background-color: #efefef;
+  background-color: #efefef00;
   color: black;
-  padding: 10px;
+  padding: 5px;
   border-radius: 5px;
   display: table;
   margin: 0px auto;
 }
 .location {
-  background-color: #efefef;
+  background-color: #efefef00;
   color: black;
 }
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
-  max-width: 500px;
+  max-width: 750px;
+  min-width: 400px;
   text-align: left;
   background: #fff;
   border-bottom: 4px solid #ccc;
@@ -169,7 +170,7 @@ a.social:hover {
   }
 
   .nav {
-    max-width: 1200px;
+    max-width: 1600px;
   }
 
   .nav .name {
