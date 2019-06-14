@@ -1,3 +1,12 @@
+/*clear defaults*/
+p {
+  display: block;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
 /* Global Layout Set-up */
 * {
   box-sizing: border-box;
@@ -7,7 +16,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: 'Yellowtail', sans-serif;
+  font-family: 'Merriweather', serif;
   color: #222;
   background: #b3a49f6e;
 }
@@ -22,46 +31,58 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('./images/city photo HDR.jpg') no-repeat top center ;
-  background-size: cover;
+  background: url('./images/city_photo_HDR.jpg') no-repeat top center ;
+  background-size: contain;
   overflow: hidden;
-  padding-top: 10%;
   line-height: 1.4;
-
 }
 
 .tag {
   background-color: none;
   color: white;
-  padding: 5px;
-  border-radius: 5px;
+  stroke: black;
   display: block;
-  margin-top: -100px;
+  margin-top: -1px;
 }
 
 .card {
   margin: 10px;
-  padding: 20px;
-  max-width: 750px;
+  padding: 0px;
+  max-width: .5vw;
   min-width: 400px;
   text-align: left;
-  background: #fff00;
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
 }
 
+footer .card {
+  margin: 0px;
+  padding: 0px;
+  border-bottom: none;
+}
+
 footer {
+  position: sticky;
   width: 100%;
   min-height: 30px;
   padding: 0px;
+  margin: 0px 0px 0px 0px;
+  font-size: .75em;
+  background: #b3a49f6e;
 }
 
 footer .copyright {
   top: -8px;
-  margin-right: 20px;
+  /* margin-right: 20px; */
   font-size: .75em;
 }
 
+.card-title {
+  text-align: center;
+  border: solid black 3px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
@@ -75,7 +96,6 @@ footer .copyright {
 
   header {
     min-height: 450px;
-    max-width: 1200px;
     justify-content: space-around;
   }
 
@@ -84,16 +104,11 @@ footer .copyright {
   }
 
   footer {
-    font-size: 1.3em;
+    font-size: 1em;
     max-width: 1200px;
-    margin: 40px auto;
+    margin: auto;
+    padding: 20px;
   }
 
 }
 
-.card-title {
-  text-align: center;
-  border: solid black 3px;
-  border-radius: 10px;
-  margin-top: 10px;
-}
